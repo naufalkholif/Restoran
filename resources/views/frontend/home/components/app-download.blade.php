@@ -5,19 +5,20 @@
                 <div class="row justify-content-between">
                     <div class="col-xl-5 col-md-6 wow fadeInUp" data-wow-duration="1s">
                         <div class="fp__download_img">
-                            <img src="images/download_img.png" alt="download" class="img-fluid w-100">
+                            <img src="{{ asset('frontend/images/hp.sukha.png') }}" alt="download" class="img-fluid w-100">
                         </div>
                     </div>
                     <div class="col-xl-6 col-md-6 wow fadeInUp" data-wow-duration="1s">
                         <div class="fp__download_text">
                             <div class="fp__section_heading mb_25">
-                                <h2>download our mobile apps</h2>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque assumenda
-                                    tenetur,
-                                    provident earum consequatur, ut voluptas laboriosam fuga error aut eaque
-                                    architecto
-                                    quo pariatur. Vel dolore omnis quisquam. Lorem ipsum dolor, sit amet consectetur
-                                    adipisicing elit Cumque.</p>
+                                <h2>Unduh Aplikasi Mobile Kami</h2>
+                                <p>Unduh aplikasi mobile kami untuk mendapatkan pengalaman terbaik dalam menikmati layanan
+                                    kami kapan saja dan di mana saja. Dengan aplikasi ini, Anda dapat memesan makanan favorit,
+                                    mengecek promo spesial, serta mendapatkan update terbaru dengan lebih mudah dan cepat.
+                                    Nikmati antarmuka yang ramah pengguna, proses transaksi yang aman, dan berbagai fitur
+                                    eksklusif hanya di aplikasi kami. Jangan lewatkan berbagai keuntungan dan kenyamanan hanya
+                                    dengan beberapa sentuhan di smartphone Anda.
+                                    Segera unduh di Google Play atau App Store dan rasakan kemudahan dalam genggaman!</p>
                             </div>
                             <ul class="d-flex flex-wrap">
                                 <li>

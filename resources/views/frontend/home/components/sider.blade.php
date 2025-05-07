@@ -8,19 +8,21 @@
                             <div class="col-xl-5 col-md-5 col-lg-5">
                                 <div class="fp__banner_img wow fadeInLeft" data-wow-duration="1s">
                                     <div class="img">
-                                        <img src="images/slider_img_1.png" alt="food item" class="img-fluid w-100">
-                                        <span> 35% off </span>
+                                        <img src="{{ asset('frontend/images/slider_img_1.png') }}" alt="food item" class="img-fluid w-100">
+                                        <span> 35% </span>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xl-5 col-md-7 col-lg-6">
                                 <div class="fp__banner_text wow fadeInRight" data-wow-duration="1s">
-                                    <h1>Different spice for a Different taste</h1>
-                                    <h3>Fast Food & Restaurants</h3>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum fugit minima
-                                        et debitis ut distinctio optio qui voluptate natus.</p>
+                                    <h1>Meningkatkan Rasa, Mempercepat Layanan</h1>
+                                    <h3>Restoran Cepat Saji dan Berkualitas</h3>
+                                    <p>Temukan pengalaman makan yang berbeda dengan cita rasa yang menggugah selera dan
+                                        pelayanan cepat. Kami berkomitmen memberikan pengalaman terbaik untuk setiap
+                                        kunjungan Anda.
+                                    </p>
                                     <ul class="d-flex flex-wrap">
-                                        <li><a class="common_btn" href="#">shop now</a></li>
+                                        <li><a class="common_btn" href="#">Pilih sekarang</a></li>
                                     </ul>
                                 </div>
                             </div>

@@ -4,8 +4,8 @@
             <div class="row wow fadeInUp" data-wow-duration="1s">
                 <div class="col-md-8 col-lg-7 col-xl-6 m-auto text-center">
                     <div class="fp__section_heading mb_25">
-                        <h4>news & blogs</h4>
-                        <h2>our latest foods blog</h2>
+                        <h4>Berita & Blog</h4>
+                        <h2>Blog Makanan Terbaru Kami</h2>
                         <span>
                             <img src="images/heading_shapes.png" alt="shapes" class="img-fluid w-100">
                         </span>
@@ -16,50 +16,48 @@
                 <div class="col-xl-4 col-sm-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
                     <div class="fp__single_blog">
                         <a href="#" class="fp__single_blog_img">
-                            <img src="images/menu2_img_1.jpg" alt="blog" class="img-fluid w-100">
+                            <img src="{{ asset('frontend/images/menu2_img_1.jpg') }}" alt="blog" class="img-fluid w-100">
                         </a>
                         <div class="fp__single_blog_text">
                             <a class="category" href="#">chicken</a>
                             <ul class="d-flex flex-wrap mt_15">
                                 <li><i class="fas fa-user"></i>admin</li>
-                                <li><i class="fas fa-calendar-alt"></i> 25 oct 2022</li>
+                                <li><i class="fas fa-calendar-alt"></i> 25 jan 2025</li>
                                 <li><i class="fas fa-comments"></i> 25 comment</li>
                             </ul>
-                            <a class="title" href="blog_details.html">Competently supply customized initiatives</a>
+                            <a class="title" href="blog_details.html">Inisiatif Kustom yang Disediakan Secara Kompeten</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-sm-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
                     <div class="fp__single_blog">
                         <a href="#" class="fp__single_blog_img">
-                            <img src="images/menu2_img_2.jpg" alt="blog" class="img-fluid w-100">
+                            <img src="{{ asset('frontend/images/menu2_img_2.jpg') }}" alt="blog" class="img-fluid w-100">
                         </a>
                         <div class="fp__single_blog_text">
                             <a class="category" href="#">kabab</a>
                             <ul class="d-flex flex-wrap mt_15">
                                 <li><i class="fas fa-user"></i>admin</li>
-                                <li><i class="fas fa-calendar-alt"></i> 27 oct 2022</li>
+                                <li><i class="fas fa-calendar-alt"></i> 27 feb 2025</li>
                                 <li><i class="fas fa-comments"></i> 41 comment</li>
                             </ul>
-                            <a class="title" href="blog_details.html">Unicode UTF8 Character Sets They Sltimate
-                                Guide Systems</a>
+                            <a class="title" href="blog_details.html">Panduan Utama Sistem Karakter Unicode UTF8</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-4 col-sm-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
                     <div class="fp__single_blog">
                         <a href="#" class="fp__single_blog_img">
-                            <img src="images/menu2_img_3.jpg" alt="blog" class="img-fluid w-100">
+                            <img src="{{ asset('frontend/images/menu2_img_3.jpg') }}" alt="blog" class="img-fluid w-100">
                         </a>
                         <div class="fp__single_blog_text">
                             <a class="category" href="#">grill</a>
                             <ul class="d-flex flex-wrap mt_15">
                                 <li><i class="fas fa-user"></i>admin</li>
-                                <li><i class="fas fa-calendar-alt"></i> 27 oct 2022</li>
+                                <li><i class="fas fa-calendar-alt"></i> 27 apr 2025</li>
                                 <li><i class="fas fa-comments"></i> 32 comment</li>
                             </ul>
-                            <a class="title" href="blog_details.html">Quality Foods Requirments For Every Human
-                                Body’s</a>
+                            <a class="title" href="blog_details.html">Kebutuhan Makanan Berkualitas untuk Setiap Tubuh Manusia</a>
                         </div>
                     </div>
                 </div>

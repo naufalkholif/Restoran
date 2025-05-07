@@ -31,8 +31,8 @@
                 <div class="row wow fadeInUp" data-wow-duration="1s">
                     <div class="col-xxl-5 col-xl-6 col-md-9 col-lg-7 m-auto">
                         <div class="fp__login_area">
-                            <h2>Welcome back!</h2>
-                            <p>sign up to continue</p>
+                            <h2>Selamat Datang Kembali!</h2>
+                            <p>sign up untuk melanjutkan</p>
                             <form method="POST" action="{{ route('register') }}">
                                 @csrf
                                 <div class="row">
@@ -65,14 +65,14 @@
                                     <div class="col-xl-12">
 
                                         <div class="fp__login_imput">
-                                            <button type="submit" class="common_btn">Register</button>
+                                            <button type="submit" class="common_btn">Daftar</button>
                                         </div>
                                     </div>
                                 </div>
                             </form>
                             <p class="or"><span>or</span></p>
 
-                            <p class="create_account">Dont’t have an aceount ? <a href="{{ route('login') }}">login</a></p>
+                            <p class="create_account">Sudah punya akun? <a href="{{ route('login') }}">masuk</a></p>
                         </div>
                     </div>
                 </div>

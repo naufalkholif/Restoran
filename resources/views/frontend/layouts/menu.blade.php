@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg main_menu">
     <div class="container">
         <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="FoodPark" class="img-fluid">
+            <img src="{{ asset('frontend/images/logo.png') }}" alt="FoodPark" class="img-fluid">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,7 +19,7 @@
                     <a class="nav-link" href="menu.html">menu</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="chefs.html">chefs</a>
+                    <a class="nav-link" href="chefs.html">team</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">pages <i class="far fa-angle-down"></i></a>
@@ -59,14 +59,14 @@
                     </div>
                 </li>
                 <li>
-                    <a class="cart_icon"><i class="fas fa-shopping-basket"></i> <span>5</span></a>
+                    <a class="cart_icon"><i class="fas fa-shopping-basket"></i> <span>0</span></a>
                 </li>
                 <li>
                     <a href="dashboard.html"><i class="fas fa-user"></i></a>
                 </li>
                 <li>
                     <a class="common_btn" href="#" data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop">reservation</a>
+                        data-bs-target="#staticBackdrop">pemesanan</a>
                 </li>
             </ul>
         </div>

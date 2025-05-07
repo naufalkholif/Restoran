@@ -3,13 +3,13 @@
         <div class="row wow fadeInUp" data-wow-duration="1s">
             <div class="col-md-8 col-lg-7 col-xl-6 m-auto text-center">
                 <div class="fp__section_heading mb_25">
-                    <h4>why choose us</h4>
-                    <h2>why choose us</h2>
+                    <h4>Kenapa Memilih Kami</h4>
+                    <h2>Pilihan Terbaik untuk Cita Rasa dan Pelayanan</h2>
                     <span>
                         <img src="images/heading_shapes.png" alt="shapes" class="img-fluid w-100">
                     </span>
-                    <p>Objectively pontificate quality models before intuitive information. Dramatically
-                        recaptiualize multifunctional materials.</p>
+                    <p>Kami mengutamakan kualitas, kecepatan, dan kepuasan pelanggan. Setiap hidangan disajikan
+                        dengan penuh perhatian menggunakan bahan-bahan terbaik.</p>
                 </div>
             </div>
         </div>
@@ -21,7 +21,7 @@
                     </div>
                     <div class="text">
                         <h3>discount voucher</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, debitis expedita .</p>
+                        <p>Nikmati berbagai penawaran spesial dan voucher diskon eksklusif untuk setiap pembelian Anda.</p>
                     </div>
                 </div>
             </div>
@@ -32,7 +32,7 @@
                     </div>
                     <div class="text">
                         <h3>fresh healthy foods</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, debitis expedita .</p>
+                        <p>Semua makanan kami diolah dari bahan-bahan segar pilihan, menjaga cita rasa dan kesehatan Anda.</p>
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@
                     </div>
                     <div class="text">
                         <h3>fast serve on table</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, debitis expedita .</p>
+                        <p>Layanan cepat dan ramah, memastikan Anda menikmati makanan tanpa perlu menunggu lama.</p>
                     </div>
                 </div>
             </div>

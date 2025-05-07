@@ -53,7 +53,7 @@
     <!--=============================
         BREADCRUMB START
     ==============================-->
-    <section class="fp__breadcrumb" style="background: url(images/counter_bg.jpg);">
+    <section class="fp__breadcrumb" style="background: url({{ asset('frontend/images/counter_bg.jpg') }}">
         <div class="fp__breadcrumb_overlay">
             <div class="container">
                 <div class="fp__breadcrumb_text">
@@ -74,14 +74,14 @@
     <!--=========================
         SIGNIN START
     ==========================-->
-    <section class="fp__signin" style="background: url(images/login_bg.jpg);">
+    <section class="fp__signin" style="background: url({{ asset('frontend/images/login_bg.jpg') }}">
         <div class="fp__signin_overlay pt_125 xs_pt_95 pb_100 xs_pb_70">
             <div class="container">
                 <div class="row wow fadeInUp" data-wow-duration="1s">
                     <div class="col-xxl-5 col-xl-6 col-md-9 col-lg-7 m-auto">
                         <div class="fp__login_area">
-                            <h2>Welcome back!</h2>
-                            <p>sign in to continue</p>
+                            <h2>Selamat Datang Kembali!</h2>
+                            <p>Masuk untuk Melanjutkan</p>
                             <form action="{{ route('login') }}" method="POST">
                                 @csrf
                                 <div class="row">
@@ -105,23 +105,23 @@
                                                 <input class="form-check-input" type="checkbox" value=""
                                                     id="flexCheckDefault" name="remember">
                                                 <label class="form-check-label" for="flexCheckDefault">
-                                                    Remeber Me
+                                                    Ingat Saya
                                                 </label>
                                             </div>
-                                            <a href="{{ route('password.request') }}">Forgot Password ?</a>
+                                            <a href="{{ route('password.request') }}">Lupa Kata Sandi?</a>
                                         </div>
                                     </div>
 
                                     <div class="col-xl-12">
                                         <div class="fp__login_imput">
-                                            <button type="submit" class="common_btn">login</button>
+                                            <button type="submit" class="common_btn">Masuk</button>
                                         </div>
                                     </div>
                                 </div>
                             </form>
                             <p class="or"><span>or</span></p>
 
-                            <p class="create_account">Dont’t have an aceount ? <a href="{{ route('register') }}">Create Account</a>
+                            <p class="create_account">Belum punya akun? <a href="{{ route('register') }}">Buat Akun</a>
                             </p>
                         </div>
                     </div>

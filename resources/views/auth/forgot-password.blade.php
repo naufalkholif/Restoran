@@ -8,7 +8,7 @@
         <div class="fp__breadcrumb_overlay">
             <div class="container">
                 <div class="fp__breadcrumb_text">
-                    <h1>forgot password</h1>
+                    <h1>Lupa Kata Sandi</h1>
                     <ul>
                         <li><a href="index.html">home</a></li>
                         <li><a href="#">forgot password</a></li>
@@ -31,8 +31,8 @@
                 <div class="row wow fadeInUp" data-wow-duration="1s">
                     <div class="col-xxl-5 col-xl-6 col-md-9 col-lg-7 m-auto">
                         <div class="fp__login_area">
-                            <h2>Welcome back!</h2>
-                            <p>forgot password</p>
+                            <h2>Selamat Datang Kembali!</h2>
+                            <p>Lupa Kata Sandi</p>
                             <form method="POST" action="{{ route('password.email') }}">
                                 @csrf
                                 <div class="row">
@@ -45,14 +45,14 @@
 
                                     <div class="col-xl-12">
                                         <div class="fp__login_imput">
-                                            <button type="submit" class="common_btn">verify mail</button>
+                                            <button type="submit" class="common_btn">Verifikasi Email</button>
                                         </div>
                                     </div>
                                 </div>
                             </form>
                             <p class="create_account d-flex justify-content-between">
-                                <a href="{{ route('login') }}">login</a>
-                                <a href="{{ route('register') }}">Create Account</a>
+                                <a href="{{ route('login') }}">Masuk</a>
+                                <a href="{{ route('register') }}">Buat Akun</a>
                             </p>
                         </div>
                     </div>

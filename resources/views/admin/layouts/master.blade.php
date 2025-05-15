@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
     <title>General Dashboard &mdash; Stisla</title>
 
     <!-- General CSS Files -->
@@ -11,8 +12,7 @@
     <link rel="stylesheet" href="{{ asset('admin/assets/modules/fontawesome/css/all.min.css') }}">
 
     <link rel="stylesheet" href="{{ asset('admin/assets/css/toastr.min.css') }}">
-
-    <!-- Template CSS -->
+    <link rel="stylesheet" href="//cdn.datatables.net/2.3.0/css/dataTables.dataTables.min.css" <!-- Template CSS -->
     <link rel="stylesheet" href="{{ asset('admin/assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('admin/assets/css/components.css') }}">
     <!-- Start GA -->
@@ -43,8 +43,7 @@
             </div>
             <footer class="main-footer">
                 <div class="footer-left">
-                    Copyright &copy; 2018 <div class="bullet"></div> Design By <a href="https://nauval.in/">Muhamad
-                        Nauval Azhar</a>
+                    Copyright &copy; 2025 <div class="bullet"></div> Design By <a href="https://nauval.in/">Sukha</a>
                 </div>
                 <div class="footer-right">
 
@@ -62,11 +61,15 @@
     <script src="{{ asset('admin/assets/js/stisla.js') }}"></script>
 
     <script src="{{ asset('admin/assets/js/toastr.min.js') }}"></script>
+    <script src="{{ asset('assets/asset/modules/upload-preview/assets/js/jquery.uploadPreview.min.js') }}"></script>
+    <script src="//cdn.datatables.net/2.3.0/js/dataTables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- Template JS File -->
     <script src="{{ asset('admin/assets/js/scripts.js') }}"></script>
     <script src="{{ asset('admin/assets/js/custom.js') }}"></script>
 
+    <!-- show dynamic validation message -->
     <script>
         toastr.options.progressBar = true;
 
@@ -76,6 +79,69 @@
             @endforeach
         @endif
     </script>
+
+    <script>
+        $.uploadPreview({
+            input_field: "#image-upload", // Default: .image-upload
+            preview_box: "#image-preview", // Default: .image-preview
+            label_field: "#image-label", // Default: .image-label
+            label_default: "Choose File", // Default: Choose File
+            label_selected: "Change File", // Default: Change File
+            no_label: false, // Default: false
+            success_callback: null // Default: null
+        });
+
+        // // Set csrf at ajax header
+        // $.ajaxSetup({
+        //     headers: {
+        //         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        //     }
+        // });
+
+        $(document).ready(function() {
+
+            $('body').on('click', '.delete-item', function(e) {
+                e.preventDefault()
+
+                let url = $(this).attr('href');
+
+                Swal.fire({
+                    title: "Are you sure?",
+                    text: "You won't be able to revert this!",
+                    icon: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#3085d6",
+                    cancelButtonColor: "#d33",
+                    confirmButtonText: "Yes, delete it!"
+                }).then((result) => {
+                    if (result.isConfirmed) {
+
+                        $.ajax({
+                            method: 'DELETE',
+                            url: url,
+                            data: {_token: "{{ csrf_token() }}"},
+                            success: function(response) {
+                                if(response.status === 'success') {
+                                    toastr.success(response.message)
+                                    
+                                    window.location.reload();
+                                    
+                                }else if(response.status === 'error') {
+                                    toastr.error(response.message)
+                                }
+                            },
+                            error: function(error) {
+                                console.error(error);
+                            }
+                        })
+                    }
+                })
+            })
+
+        })
+    </script>
+
+    @stack('scripts')
 </body>
 
 </html>

@@ -27,9 +27,18 @@
                     <i class="fas fa-cog"></i> Settings
                 </a>
                 <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item has-icon text-danger">
-                    <i class="fas fa-sign-out-alt"></i> Logout
-                </a>
+                <!-- Authentication -->
+                <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+
+                    <a href="#"
+                        onclick="event.preventDefault();
+                    this.closest('form').submit();"
+                        class="dropdown-item has-icon text-danger">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </a>
+                </form>
+
             </div>
         </li>
     </ul>
@@ -48,6 +57,11 @@
             </li>
 
             <li class="menu-header">Starter</li>
+
+            <li><a class="nav-link" href="{{ route('admin.slider.index') }}"><i class="far fa-square"></i> 
+            <span>Slider</span></a></li>
+
+
             {{-- <li class="dropdown">
           <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>Layout</span></a>
           <ul class="dropdown-menu">
@@ -58,6 +72,6 @@
         </li> --}}
             {{--  <li><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>Blank Page</span></a></li> --}}
 
-    </ul>
+        </ul>
     </aside>
 </div>

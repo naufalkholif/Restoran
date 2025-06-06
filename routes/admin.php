@@ -2,8 +2,11 @@
 
 use App\Http\Controllers\Admin\AdminAuthController;
 use App\Http\Controllers\Admin\AdminDashboardController;
+use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\SliderController;
+use App\Http\Controllers\Admin\WhyChooseUsController;
+use App\Models\Category;
 use Illuminate\Support\Facades\Route;
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.'], function(){
@@ -18,5 +21,12 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function(){
 
     /** Slider routes */
     Route::resource('slider', SliderController::class);
+
+    /** Why choose us Routes */
+    Route::put('why-choose-title-update', [WhyChooseUsController::class, 'updateTitle'])->name('why-choose-title.update');
+    Route::resource('why-choose-us', WhyChooseUsController::class);
+
+    /** Product Category Routes */
+    Route::resource('category', CategoryController::class);
 
 });

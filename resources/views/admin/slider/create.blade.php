@@ -23,27 +23,27 @@
                             </div>
                         </div>
                     </div>
-                    <div class="from-group">
+                    <div class="form-group">
                         <label>Offer </label>
                         <input type="text" name="offer" class="form-control">
                     </div>
-                    <div class="from-group">
+                    <div class="form-group">
                         <label>Title</label>
                         <input type="text" name="title"class="form-control">
                     </div>
-                    <div class="from-group">
+                    <div class="form-group">
                         <label>Sub Title</label>
                         <input type="text" name="sub_title" class="form-control">
                     </div>
-                    <div class="from-group">
+                    <div class="form-group">
                         <label>Short Description</label>
                         <textarea name="short_description" class="form-control"></textarea>
                     </div>
-                    <div class="from-group">
+                    <div class="form-group">
                         <label>Button Link</label>
                         <input type="text" name="button_link" class="form-control">
                     </div>
-                    <div class="from-group">
+                    <div class="form-group">
                         <label>Status</label>
                         <select name="status" class="form-control" id="">
                             <option value="1">Yes</option>

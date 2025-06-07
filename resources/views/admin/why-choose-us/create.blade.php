@@ -15,19 +15,19 @@
                 <form action="{{ route('admin.why-choose-us.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     
-                    <div class="from-group">
+                    <div class="form-group">
                         <label>Icon</label>
                         <br>
                         <button class="btn btn-primary" role="iconpicker" name="icon"></button>
                     </div>
-                    <div class="from-group">
+                    <div class="form-group">
                         <label>Title</label>
                         <input type="text" name="title"class="form-control">
                     </div>
-                    <div class="from-group">
+                    <div class="form-group">
                         <label>Short Description</label>
                         <textarea name="short_description" class="form-control"></textarea>
-                    <div class="from-group">
+                    <div class="form-group">
                         <label>Status</label>
                         <select name="status" class="form-control" id="">
                             <option value="1">Yes</option>

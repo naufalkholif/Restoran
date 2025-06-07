@@ -15,12 +15,12 @@
                 <form action="{{ route('admin.category.update', $category->id) }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     @method('PUT')
-                    <div class="from-group">
+                    <div class="form-group">
                         <label>Name</label>
                         <input type="text" name="name" class="form-control" value="{{ $category->name }}">
                     </div>
                     
-                    <div class="from-group">
+                    <div class="form-group">
                         <label>Show at Home</label>
                         <select name="show_at_home" class="form-control" id="">
                             <option @selected($category->show_at_home === 1)value="1">Yes</option>
@@ -28,7 +28,7 @@
                         </select>
                     </div>
 
-                    <div class="from-group">
+                    <div class="form-group">
                         <label>Status</label>
                         <select name="status" class="form-control" id="">
                             <option @selected($category->status === 1) value="1">Active</option>

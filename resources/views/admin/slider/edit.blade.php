@@ -24,27 +24,27 @@
                             </div>
                         </div>
                     </div>
-                    <div class="from-group">
+                    <div class="form-group">
                         <label>Offer </label>
                         <input type="text" name="offer" class="form-control" value="{{ $slider->offer }}">
                     </div>
-                    <div class="from-group">
+                    <div class="form-group">
                         <label>Title</label>
                         <input type="text" name="title"class="form-control" value="{{ $slider->title }}">
                     </div>
-                    <div class="from-group">
+                    <div class="form-group">
                         <label>Sub Title</label>
                         <input type="text" name="sub_title" class="form-control" value="{{ $slider->sub_title }}">
                     </div>
-                    <div class="from-group">
+                    <div class="form-group">
                         <label>Short Description</label>
                         <textarea name="short_description" class="form-control">{{ $slider->short_description}}</textarea>
                     </div>
-                    <div class="from-group">
+                    <div class="form-group">
                         <label>Button Link</label>
                         <input type="text" name="button_link" class="form-control" value="{{ $slider->button_link }}">
                     </div>
-                    <div class="from-group">
+                    <div class="form-group">
                         <label>Status</label>
                         <select name="status" class="form-control" id="">
                             <option @selected($slider->status === 1) value="1">Active</option>

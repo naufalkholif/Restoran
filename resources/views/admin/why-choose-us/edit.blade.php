@@ -15,19 +15,19 @@
                 <form action="{{ route('admin.why-choose-us.update', $whyChooseUs->id) }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     @method('PUT')
-                    <div class="from-group">
+                    <div class="form-group">
                         <label>Icon</label>
                         <br>
                         <button data-icon="{{ $whyChooseUs->icon }}" class="btn btn-primary" role="iconpicker" name="icon"></button>
                     </div>
-                    <div class="from-group">
+                    <div class="form-group">
                         <label>Title</label>
                         <input type="text" name="title"class="form-control" value="{{ $whyChooseUs->title }}">
                     </div>
-                    <div class="from-group">
+                    <div class="form-group">
                         <label>Short Description</label>
                         <textarea name="short_description" class="form-control">{{ $whyChooseUs->short_description }}</textarea>
-                    <div class="from-group">
+                    <div class="form-group">
                         <label>Status</label>
                         <select name="status" class="form-control" id="">
                             <option @selected ($whyChooseUs->status === 1) value="1">Yes</option>
